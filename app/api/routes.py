@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from app.models.schema import ISBNRequest, SaveRequest
-from app.services.google_books import fetch_book_title
+from app.services.title_fetch import fetch_book_title
 from app.services.sheet_handler import init_sheet, save_to_sheet
 
 router = APIRouter()
